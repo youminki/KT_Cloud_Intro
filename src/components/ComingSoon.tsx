@@ -94,209 +94,56 @@ const ComingSoon = (): React.JSX.Element => {
               >
                 <style>
                   {`
-                    .flex {
-                      display: flex;
-                      justify-content: space-between;
+                    .text-pressure-title {
+                      font-family: Inter, sans-serif;
+                      text-transform: uppercase;
+                      font-size: clamp(2.5rem, 12vw, 6rem);
+                      line-height: 1;
+                      transform: scale(1, 1);
+                      transform-origin: center top;
+                      margin: 0px;
+                      text-align: center;
+                      user-select: none;
+                      white-space: normal;
+                      font-weight: 400;
+                      width: 100%;
+                      letter-spacing: 0.02em;
+                      word-break: break-word;
                     }
-                    .stroke span {
-                      position: relative;
-                      color: #FFFFFF;
+                    
+                    .text-pressure-title span {
+                      display: inline-block;
+                      color: rgb(255, 255, 255);
+                      transition: font-weight 0.1s, font-stretch 0.1s;
+                      opacity: 1;
+                      font-weight: 200;
+                      font-stretch: 100%;
+                      font-style: normal;
                     }
-                    .stroke span::after {
-                      content: attr(data-char);
-                      position: absolute;
-                      left: 0;
-                      top: 0;
-                      color: transparent;
-                      z-index: -1;
-                      -webkit-text-stroke-width: 3px;
-                      -webkit-text-stroke-color: #FF0000;
+                    
+                    .text-pressure-title span:hover {
+                      font-weight: 400;
+                      font-stretch: 110%;
                     }
                   `}
                 </style>
-                <h1
-                  className="text-pressure-title flex"
-                  style={{
-                    fontFamily: "Inter, sans-serif",
-                    textTransform: "uppercase",
-                    fontSize: "var(--text-8xl)",
-                    lineHeight: 1,
-                    transform: "scale(1, 1)",
-                    transformOrigin: "center top",
-                    margin: 0,
-                    textAlign: "center",
-                    userSelect: "none",
-                    whiteSpace: "nowrap",
-                    fontWeight: 700,
-                    width: "100%",
-                    letterSpacing: "0.05em",
-                    wordBreak: "normal",
-                  }}
-                >
-                  <span
-                    data-char="C"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    C
-                  </span>
-                  <span
-                    data-char="O"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    O
-                  </span>
-                  <span
-                    data-char="M"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    M
-                  </span>
-                  <span
-                    data-char="I"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    I
-                  </span>
-                  <span
-                    data-char="N"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    N
-                  </span>
-                  <span
-                    data-char="G"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    G
-                  </span>
-                  <span
-                    data-char=" "
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  ></span>
-                  <span
-                    data-char=" "
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  ></span>
-                  <span
-                    data-char=" "
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  ></span>
-                  <span
-                    data-char=" "
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  ></span>
-                  <span
-                    data-char=" "
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  ></span>
-                  <span
-                    data-char=" "
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  ></span>
-                  <span
-                    data-char="S"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    S
-                  </span>
-                  <span
-                    data-char="O"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    O
-                  </span>
-                  <span
-                    data-char="O"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    O
-                  </span>
-                  <span
-                    data-char="N"
-                    style={{
-                      display: "inline-block",
-                      color: "#FFFFFF",
-                      transition:
-                        "font-weight 0.1s ease, font-stretch 0.1s ease",
-                    }}
-                  >
-                    N
-                  </span>
+                <h1 className="text-pressure-title flex">
+                  <span data-char="C">C</span>
+                  <span data-char="O">O</span>
+                  <span data-char="M">M</span>
+                  <span data-char="I">I</span>
+                  <span data-char="N">N</span>
+                  <span data-char="G">G</span>
+                  <span data-char=" "> </span>
+                  <span data-char=" "> </span>
+                  <span data-char=" "> </span>
+                  <span data-char=" "> </span>
+                  <span data-char=" "> </span>
+                  <span data-char=" "> </span>
+                  <span data-char="S">S</span>
+                  <span data-char="O">O</span>
+                  <span data-char="O">O</span>
+                  <span data-char="N">N</span>
                 </h1>
               </div>
             </div>
